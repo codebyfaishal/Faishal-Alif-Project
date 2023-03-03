@@ -5,7 +5,7 @@ import * as api from "../api/api";
 function* getCategory() {
   try {
     const result = yield call(api.apiGetList);
-    console.log("LIST", result)
+    // console.log("LIST", result)
 
     yield put(actions.getCategorySuccess(result.data.categories));
 
@@ -20,11 +20,10 @@ function* getCategory() {
 
 
 export function* getCategoryDetails(action) {
-  console.log("AACTION", action);
+//   console.log("AACTION", action);
   try {
-    const result = yield call(api.apiGetListDetail, action.selectedId);
-    console.log("action select id", action);
-    console.log("getPokemonsDetails", result.data);
+    const result = yield call(api.apiGetListDetail, action.selectedCategory);
+
 
     yield put(actions.getCategoryDetailsSuccess(result.data));
   } catch (error) {

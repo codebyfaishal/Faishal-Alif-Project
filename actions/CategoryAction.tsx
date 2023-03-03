@@ -21,9 +21,9 @@ export const Types = {
     
   });
 
-  export const getCategoryDetailsRequest = (selectedId) => ({
+  export const getCategoryDetailsRequest = (selectedCategory) => ({
     type: Types.GET_CATEGORY_DETAILS_REQUEST,
-    selectedId,
+    selectedCategory,
   });
   
   export const getCategoryDetailsSuccess = itemsDetail => ({
