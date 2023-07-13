@@ -9,7 +9,7 @@ const listItems = ({ obat }) => {
     <View style={tailwind('bg-gray-200 p-4 mb-4')}>
         <Text style={tailwind('text-gray-800 font-bold')}>{"R/"} {obat.namaObat}</Text>
         <Text style={tailwind('text-gray-600')}>{obat.waktuObat}</Text>
-        <Text style={tailwind('text-gray-600')}>{obat.catatanObat}</Text>
+        <Text style={tailwind('text-gray-600')}>{"Catatan:"} {obat.catatanObat}</Text>
     </View>
   );
 };
