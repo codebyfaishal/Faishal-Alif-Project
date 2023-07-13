@@ -14,6 +14,11 @@
 			"marginBottom": 12
 		}
 	},
+	"flex": {
+		"style": {
+			"display": "flex"
+		}
+	},
 	"flex-1": {
 		"style": {
 			"flexGrow": 1,

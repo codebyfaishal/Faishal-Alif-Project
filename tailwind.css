@@ -10,6 +10,10 @@
   margin-bottom: 0.75rem
 }
 
+.flex {
+  display: flex
+}
+
 .flex-1 {
   flex: 1 1 0%
 }
